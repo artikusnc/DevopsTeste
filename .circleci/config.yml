@@ -11,15 +11,3 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-
-orbs:
-  win: circleci/windows@2.3.0
-
-jobs:
-  build:
-    executor: win/default
-    steps:
-      - checkout
-      - run: echo 'Hello, Windows'
-
-branches – DEPRECATED
