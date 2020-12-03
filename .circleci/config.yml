@@ -9,6 +9,7 @@ jobs:
     steps:
       - checkout
       - run: ls -lah
+      - run: /app/test
       - run: echo "this is the build job"
 
 # Orchestrate or schedule a set of jobs
