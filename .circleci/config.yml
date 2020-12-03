@@ -6,8 +6,9 @@ jobs:
   build:
     steps:
       - checkout
-      - run: ls -lah
-      - run: echo "this is the build job"
+      - run: npm test
+      - run: echo "Este foi o Fake Teste"
+
 
 # Orchestrate or schedule a set of jobs
 workflows:
