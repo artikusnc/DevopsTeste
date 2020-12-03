@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: ls -lah
       - run: 
-          command: npm test
+          command: /app/npm test
       - run: echo "this is the build job"
 
 # Orchestrate or schedule a set of jobs
