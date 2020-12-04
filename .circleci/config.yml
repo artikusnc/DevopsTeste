@@ -12,7 +12,7 @@ jobs:
       - run: 
           path: ./app
           command: npm test
-      - run: echo "this is the build job"
+      - run: echo "Final do Checkout e Test Fake"
 
 # Orchestrate or schedule a set of jobs
 workflows:
