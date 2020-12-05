@@ -8,7 +8,6 @@ jobs:
     - image: cimg/node:14.15.1
     steps:
       - checkout
-      - run: ls -lah
       - run: 
           path: ./app
           name: Fake Test
