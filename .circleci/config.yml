@@ -11,6 +11,7 @@ jobs:
       - run: ls -lah
       - run: 
           path: ./app
+          name: Fake Test
           command: npm test
       - run: echo "Final do Checkout e Test Fake"
 
