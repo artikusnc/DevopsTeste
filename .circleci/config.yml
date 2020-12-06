@@ -12,11 +12,6 @@ jobs:
       - image: cimg/node:14.15.1
     steps:
       - checkout
-      - run: 
-          path: ./app
-          name: Fake Test
-          command: npm test
-      - run: echo "Final do Checkout e Test Fake"
       - setup_remote_docker
       - run:
           name: Build Docker image
