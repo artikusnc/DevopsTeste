@@ -8,8 +8,6 @@ executors:
 jobs:
   build:
     executor: docker-publisher
-    docker:
-      - image: cimg/node:14.15.1
     steps:
       - checkout
       - setup_remote_docker
