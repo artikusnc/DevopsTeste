@@ -17,7 +17,7 @@ jobs:
             docker build -t devops:1.2 .
       - run:
           name: Archive Docker image
-          command: docker save -o image.tar testedev
+          command: docker save -o image.tar testedev:tagname
       - persist_to_workspace:
           root: .
           paths:
@@ -33,8 +33,8 @@ jobs:
           command: docker load -i /tmp/workspace/image.tar
       - run:
           name: Publish Docker Image to Docker Hub
-          command: |
-            echo k0p3rn1c0 | docker login -u artikusnc --password-stdin
+#          command: |
+#            echo k0p3rn1c0 | docker login -u artikusnc --password-stdin
             docker push devops:1.2 .
 workflows:
   version: 2
